@@ -8,6 +8,9 @@ function resolve(dir) {
 }
 
 module.exports = {
+    externals: {
+        jquery: 'jQuery.noConflict()',
+    },
     entry: {
         app: './src/main.js'
     },

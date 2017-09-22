@@ -40,6 +40,10 @@ module.exports = merge(baseWebpackConfig, {
             inject: true,
             path: config.dev.assetsPublicPath + config.dev.assetsSubDirectory
         }),
-        new FriendlyErrorsPlugin()
+        new FriendlyErrorsPlugin(),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
     ]
 })
