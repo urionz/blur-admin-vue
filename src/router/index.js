@@ -21,27 +21,39 @@ export const routerMap = [
         children: [
             {
                 path: 'dashboard',
-                name: 'dashboard',
+                name: 'Dashboard',
                 icon: 'ion-android-home',
                 collspan: true,
+                expanded: false,
+                selected: false,
                 component: _import('dashboard/index'),
                 children: [
                     {
-                        path: '/aaa',
-                        name: 'aaa'
+                        path: '/ddd',
+                        name: 'ddd'
                     }
                 ]
             },
             {
-                path: 'dashboard1',
-                name: 'dashboard1',
-                icon: 'ion-android-home',
+                path: 'edit',
+                name: 'Editors',
+                icon: 'ion-edit',
                 collspan: false,
+                expanded: false,
+                selected: false,
                 component: _import('dashboard/index'),
                 children: [
                     {
                         path: '/aaa',
                         name: 'aaa'
+                    },
+                    {
+                        path: '/bbb',
+                        name: 'bbb'
+                    },
+                    {
+                        path: '/ccc',
+                        name: 'ccc'
                     }
                 ]
             }
